@@ -15,14 +15,15 @@ const parseCode = (str) => {
 			x+=str[i]
 		}
 	}
-	let obj={firstName: "John", lastName: "Doe", id: "123"}
+	arr.push(x)
+	let obj={}
 	obj.firstName=arr[0]
 	obj.lastName=arr[1]
 	obj.id=arr[2]
-	return obj
+	return obj 
 	
 };
 
 // Do not change the code below
-const str = prompt("Enter str: ");
-alert(JSON.stringify(parseCode(str)));
+ const str = prompt("Enter str: ");
+ alert(JSON.stringify(parseCode(str)));  
